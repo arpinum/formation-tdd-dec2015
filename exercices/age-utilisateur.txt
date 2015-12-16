@@ -1,0 +1,7 @@
+Ecrire un programme console qui :
+  - demande la date de naissance de l'utilisateur dans la console
+  - affiche l'age de l'utilisateur dans la console
+
+
+Ex :
+Le 11/05/2015, l'utilisateur saisit 27/04/1983, le programme affiche "Vous avez 32 ans".

@@ -1,0 +1,10 @@
+Ecrire un serveur REST de gestion de liste de tâches.
+
+Le serveur exposera les ressources suivantes :
+
+GET /tasks : liste les tâches en JSON
+POST /tasks : crée une nouvelle tâche avec les informations du body en JSON
+GET /tasks/id : retourne la tâche pour l'identifiant <id> en JSON
+DELETE /tasks/id : supprime la tâche pour l'identifiant <id>
+
+

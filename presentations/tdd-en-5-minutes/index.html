@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Test-Driven Development</title>
+
+    <meta name="description" content="Test-Driven Development">
+    <meta name="author" content="Michael">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="css/redefinitions.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+              ? 'reveal.js/css/print/pdf.css'
+              : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>TDD</h1>
+
+          <h3>Test-Driven Development</h3>
+
+          <p>
+            <small><a href="https://twitter.com/michael_borde">Michael Borde</a> /
+              <a href="http://twitter.com/michael_borde">@michael_borde</a>
+              / <a href="http://arpinum.fr">arpinum.fr</a>
+            </small>
+          </p>
+          <img width="10%" height="10%" src="images/logo-arpinum.png" alt="Arpinum"/>
+        </section>
+
+        <!--<section>--><!--<img width="60%" height="60%" src="images/lolcat.jpg" alt="Lolcat"/>-->
+        <!--</section>-->
+
+        <section>
+          <h2>#TDD ?!</h2>
+          <img width="20%" height="20%" src="images/livre-tdd-by-example.jpeg" alt="TDD By Example"/> <img
+                width="20%" height="20%" src="images/livre-xp-explained.jpg" alt="XP Explained"/>
+        </section>
+
+        <section>
+          <h2>La mission ?</h2>
+        </section>
+        <section>
+          <p>Du code propre qui fonctionne...</p>
+
+          <p class="fragment"><strong>maintenant!</strong></p>
+        </section>
+
+        <section>
+          <blockquote>&ldquo;Du code non testé est du code qui ne fonctionne pas.&rdquo;</blockquote>
+          <p>Kent Beck</p>
+        </section>
+
+        <section>
+          <h2>C'est pour qui ?</h2>
+          <img width="60%" height="60%" src="images/equipe-developpement.jpg" alt="Equipe développement"/>
+        </section>
+
+        <section>
+          <p>les développeurs \o/</p>
+        </section>
+
+        <section>
+          <p>Un seul outil :</p>
+          <img width="30%" height="30%" src="images/junit.jpg" alt="JUnit"/>
+
+          <p>les tests unitaires</p>
+        </section>
+
+        <section>
+          <h3>Make them <strong>first</strong></h3>
+          <ul>
+            <li><strong>F</strong>ast,</li>
+            <li><strong>I</strong>solated,</li>
+            <li><strong>R</strong>epeatable,</li>
+            <li><strong>S</strong>elf-verifying,</li>
+            <li><strong>T</strong>imely.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3 règles</h2>
+        </section>
+
+        <section>
+          <p>Ne pas écrire de code de production si ce n'est pour faire passer un test qui échoue.</p>
+        </section>
+
+        <section>
+          <p>Ecrire juste assez de code de test pour démontrer un échec.</p>
+        </section>
+
+        <section>
+          <p>Ecrire juste assez de code de production pour faire passer un test.</p>
+        </section>
+
+        <section>
+          <h2>Un cycle rapide</h2>
+          <img width="60%" height="60%" src="images/cycle-tdd.jpg" alt="Cycle TDD"/>
+        </section>
+
+        <section>
+          <h2>Refactoring</h2>
+          <img width="60%" height="60%" src="images/spaghetti.jpg" alt="Plat de spaguetti"/>
+        </section>
+
+        <section>
+          <p>La bonne conception n'est jamais la première...</p>
+          <img width="60%" height="60%" src="images/evolution-humaine.jpg" alt="Evolution humaine"/>
+
+          <p class="fragment"><strong>elle émerge</strong></p>
+        </section>
+
+        <section>
+          <h2>Par où commencer?</h2>
+          <img width="60%" height="60%" src="images/chat-pensif.jpg" alt="Chat pensif"/>
+        </section>
+
+        <section>
+          <h2>Vous aimez le bowling?</h2>
+          <img width="60%" height="60%" src="images/bowling.jpg" alt="Bowling"/>
+        </section>
+
+        <section data-background="images/score-bowling.jpg">
+        </section>
+
+        <section>
+          <h3>Les règles</h3>
+          <ul>
+            <li>Score carreau = quilles abattues</li>
+            <li>Spare = 10 + lancer suivant</li>
+            <li>Strike = 10 + 2 lancers suivants</li>
+            <li>Le 10ème jeu est particulier</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Quel est le score max ?</p>
+        </section>
+
+        <section data-background="images/score-max-bowling.jpg">
+        </section>
+
+        <section>
+          <h2>Place au code...</h2>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: true,
+
+        theme: Reveal.getQueryHash().theme || 'beige',
+        transition: Reveal.getQueryHash().transition || 'none',
+
+        dependencies: [
+          {
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          }
+        ]
+      });
+    </script>
+
+  </body>
+</html>

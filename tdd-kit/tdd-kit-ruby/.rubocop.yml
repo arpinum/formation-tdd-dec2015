@@ -1,0 +1,22 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/Gemfile'
+    - '**/*.gemspec'
+  Exclude:
+    - 'bin/*'
+    - 'vendor/*'
+Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented

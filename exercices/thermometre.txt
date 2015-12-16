@@ -1,0 +1,9 @@
+Pour hacker un peu plus votre maison, réaliser un programme console qui affiche
+régulièrement (ex toutes les 5s) la température maximale de votre salon à l'écran.
+
+Indice : si vous ne disposez pas d'un Arduino et d'un capteur de température,
+l'implémentation réelle peut générer des températures alétoires :)
+
+Exercice inspiré de différentes conférences d'Olivier Azeau :
+  - http://agilitateur.azeau.com
+  - http://agilitateur.azeau.com/post/2011/04/12/Pour-en-finir-avec-les-Stubs-et-les-Mocks

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <title>Jeu de la vie</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Jeu de la vie">
+    <meta name="author" content="Michael">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/redefinitions.css">
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <div class="slides">
+        <section>
+          <h1>Jeu de la vie</h1>
+
+          <p>
+            <small><a href="https://twitter.com/michael_borde">Michael Borde</a> /
+              <a href="http://twitter.com/michael_borde">@michael_borde</a>
+              / <a href="http://arpinum.fr">arpinum.fr</a>
+            </small>
+          </p>
+          <img width="10%" height="10%" src="images/logo-arpinum.png" alt="Arpinum"/>
+        </section>
+
+        <section>
+          <h3>Jeu de la vie</h3>
+          <ul>
+            <li>Automate cellulaire</li>
+            <li>John Horton Conway (1970)</li>
+            <li>Règles simples</li>
+            <li>Motifs complexes</li>
+          </ul>
+        </section>
+
+        <section data-background="images/canon-jeu-de-la-vie.gif">
+        </section>
+
+        <section>
+          <h3>Le métier</h3>
+          <img width="20%" height="20%" src="images/cellules.png" alt="Cellules"/>
+          <ul>
+            <li>Une cellule est vivante ou morte</li>
+            <li>Une cellule a 8 voisines</li>
+            <li>La grille est infinie</li>
+            <li>Une graine</li>
+            <li>Des générations</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Les règles</h3>
+          <ul>
+            <li>Cellule vivante avec < 2 voisines meurt</li>
+            <li>Cellule vivante avec > 3 voisines meurt</li>
+            <li>Cellule vivante avec 2 ou 3 voisines reste en vie</li>
+            <li>Cellule morte avec exactement 3 voisines devient vivante</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+      (function () {
+        'use strict';
+
+        Reveal.initialize({
+          controls: false,
+          progress: true,
+          history: true,
+          center: true,
+          mouseWheel: true,
+
+          theme: Reveal.getQueryHash().theme || 'beige',
+          transition: Reveal.getQueryHash().transition || 'none',
+
+          dependencies: [
+            {
+              src: 'lib/js/classList.js',
+              condition: function () {
+                return !document.body.classList;
+              }
+            }
+          ]
+        });
+      })();
+    </script>
+  </body>
+</html>
